@@ -19,6 +19,10 @@ public:
     void draw(int x, int y, int w, int h);
     void draw(int x, int y) {draw(x, y, width, height);}
     ofTexture& getTextureReference() {return tex;}
+    
+	unsigned char *	getPixels(int x, int y);
+    int getPixelWidth();
+    int getPixelHeight();
 
 private:
     int width, height;
